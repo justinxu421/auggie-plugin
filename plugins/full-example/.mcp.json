@@ -3,6 +3,26 @@
     "context7": {
       "command": "npx",
       "args": ["-y", "@upstash/context7-mcp"]
+    },
+    "fetch": {
+      "type": "http",
+      "url": "https://remote.mcpservers.org/fetch/mcp"
+    },
+    "sequential-thinking": {
+      "type": "http",
+      "url": "https://remote.mcpservers.org/sequentialthinking/mcp"
+    },
+    "deepwiki": {
+      "type": "http",
+      "url": "https://mcp.deepwiki.com/mcp"
+    },
+    "coingecko": {
+      "type": "sse",
+      "url": "https://mcp.api.coingecko.com/sse"
+    },
+    "semgrep": {
+      "type": "sse",
+      "url": "https://mcp.semgrep.ai/sse"
     }
   }
 }

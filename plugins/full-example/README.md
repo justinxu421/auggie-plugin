@@ -47,14 +47,18 @@ A comprehensive plugin demonstrating all Augment plugin capabilities in a single
 | `coding-standards.md` | General coding best practices |
 | `project-conventions.md` | Project-specific conventions |
 
-### MCP Server (context7)
+### MCP Servers
 
-Uses the [Context7 MCP server](https://github.com/upstash/context7-mcp) for documentation lookup.
+Demonstrates both local (stdio) and remote (HTTP/SSE) MCP servers:
 
-| Tool | Description |
-|------|-------------|
-| `resolve-library-id` | Find library IDs for documentation lookup |
-| `get-library-docs` | Fetch up-to-date documentation for libraries |
+| Server | Type | Description |
+|--------|------|-------------|
+| `context7` | stdio | Documentation lookup for libraries |
+| `fetch` | HTTP | Fetch and convert web content to markdown |
+| `sequential-thinking` | HTTP | Structured problem-solving tool |
+| `deepwiki` | HTTP | Auto-generated architecture docs for codebases |
+| `coingecko` | SSE | Cryptocurrency data platform |
+| `semgrep` | SSE | Static analysis for code security |
 
 ## Directory Structure
 
@@ -62,7 +66,7 @@ Uses the [Context7 MCP server](https://github.com/upstash/context7-mcp) for docu
 full-example/
 ├── .augment-plugin/
 │   └── plugin.json         # Plugin metadata
-├── .mcp.json               # MCP server configuration
+├── .mcp.json               # MCP server configuration (context7)
 ├── hooks/
 │   ├── hooks.json          # Hook configuration
 │   ├── pre_edit_check.py   # PreToolUse hook
@@ -76,8 +80,6 @@ full-example/
 ├── rules/
 │   ├── coding-standards.md
 │   └── project-conventions.md
-├── mcp/
-│   └── project_server.py   # MCP server implementation
 └── README.md
 ```
 
@@ -103,7 +105,13 @@ full-example/
 ```
 
 ### MCP Tools
-The MCP server provides tools automatically available to the AI for project analysis.
+Multiple MCP servers provide various capabilities:
+- **context7**: Library documentation lookup
+- **fetch**: Web content retrieval
+- **sequential-thinking**: Structured problem solving
+- **deepwiki**: Codebase architecture documentation
+- **coingecko**: Cryptocurrency data
+- **semgrep**: Code security analysis
 
 ## License
 

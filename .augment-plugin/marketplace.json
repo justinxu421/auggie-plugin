@@ -48,18 +48,6 @@
       }
     },
     {
-      "name": "time-server",
-      "description": "MCP server providing time and date utilities",
-      "version": "1.0.0",
-      "source": "./plugins/time-server",
-      "category": "utilities",
-      "tags": ["mcp", "time", "date"],
-      "author": {
-        "name": "Justin Xu",
-        "email": "jxu421@gmail.com"
-      }
-    },
-    {
       "name": "dev-rules",
       "description": "Development best practices and coding standards as rules",
       "version": "1.0.0",
