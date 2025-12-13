@@ -1,0 +1,88 @@
+{
+  "$schema": "https://augmentcode.com/plugin-marketplace.schema.json",
+  "name": "auggie-plugin-marketplace",
+  "description": "Example plugin marketplace demonstrating commands, hooks, agents, MCP servers, and rules",
+  "version": "1.0.0",
+  "author": {
+    "name": "Justin Xu",
+    "email": "jxu421@gmail.com"
+  },
+  "homepage": "https://github.com/justinxu421/auggie-plugin",
+  "repository": "https://github.com/justinxu421/auggie-plugin",
+  "license": "MIT",
+  "plugins": [
+    {
+      "name": "hello-commands",
+      "description": "Example slash commands for greeting users and summarizing files",
+      "version": "1.0.0",
+      "source": "./plugins/hello-commands",
+      "category": "productivity",
+      "tags": ["commands", "example", "starter"],
+      "author": {
+        "name": "Justin Xu",
+        "email": "jxu421@gmail.com"
+      }
+    },
+    {
+      "name": "code-guard",
+      "description": "Security-focused hooks that warn about potentially dangerous code patterns",
+      "version": "1.0.0",
+      "source": "./plugins/code-guard",
+      "category": "security",
+      "tags": ["hooks", "security", "validation"],
+      "author": {
+        "name": "Justin Xu",
+        "email": "jxu421@gmail.com"
+      }
+    },
+    {
+      "name": "task-agent",
+      "description": "Autonomous agents for breaking down and managing development tasks",
+      "version": "1.0.0",
+      "source": "./plugins/task-agent",
+      "category": "productivity",
+      "tags": ["agents", "planning", "tasks"],
+      "author": {
+        "name": "Justin Xu",
+        "email": "jxu421@gmail.com"
+      }
+    },
+    {
+      "name": "time-server",
+      "description": "MCP server providing time and date utilities",
+      "version": "1.0.0",
+      "source": "./plugins/time-server",
+      "category": "utilities",
+      "tags": ["mcp", "time", "date"],
+      "author": {
+        "name": "Justin Xu",
+        "email": "jxu421@gmail.com"
+      }
+    },
+    {
+      "name": "dev-rules",
+      "description": "Development best practices and coding standards as rules",
+      "version": "1.0.0",
+      "source": "./plugins/dev-rules",
+      "category": "best-practices",
+      "tags": ["rules", "standards", "guidelines"],
+      "author": {
+        "name": "Justin Xu",
+        "email": "jxu421@gmail.com"
+      }
+    },
+    {
+      "name": "full-example",
+      "description": "Complete example plugin with commands, hooks, agents, MCP servers, and rules all in one",
+      "version": "1.0.0",
+      "source": "./plugins/full-example",
+      "category": "example",
+      "tags": ["example", "complete", "demo", "commands", "hooks", "agents", "mcp", "rules"],
+      "author": {
+        "name": "Justin Xu",
+        "email": "jxu421@gmail.com"
+      }
+    }
+  ]
+}
+

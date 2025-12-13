@@ -1,0 +1,12 @@
+{
+  "name": "dev-rules",
+  "description": "Development best practices and coding standards as rules",
+  "version": "1.0.0",
+  "author": {
+    "name": "Justin Xu",
+    "email": "jxu421@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": ["rules", "standards", "guidelines"]
+}
+

@@ -1,0 +1,12 @@
+{
+  "name": "hello-commands",
+  "description": "Example slash commands for greeting users and summarizing files",
+  "version": "1.0.0",
+  "author": {
+    "name": "Justin Xu",
+    "email": "jxu421@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": ["commands", "example", "starter"]
+}
+

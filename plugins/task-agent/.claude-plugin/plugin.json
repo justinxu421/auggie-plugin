@@ -1,0 +1,12 @@
+{
+  "name": "task-agent",
+  "description": "Autonomous agents for breaking down and managing development tasks",
+  "version": "1.0.0",
+  "author": {
+    "name": "Justin Xu",
+    "email": "jxu421@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": ["agents", "planning", "tasks"]
+}
+

@@ -1,0 +1,23 @@
+{
+  "name": "full-example",
+  "description": "Complete example plugin demonstrating all capabilities: commands, hooks, agents, MCP servers, and rules",
+  "version": "1.0.0",
+  "author": {
+    "name": "Justin Xu",
+    "email": "jxu421@gmail.com"
+  },
+  "homepage": "https://github.com/justinxu421/auggie-plugin",
+  "repository": "https://github.com/justinxu421/auggie-plugin",
+  "license": "MIT",
+  "keywords": ["example", "complete", "demo", "all-in-one"],
+  "mcpServers": {
+    "project-utils": {
+      "command": "python3",
+      "args": ["${AUGMENT_PLUGIN_ROOT}/mcp/project_server.py"],
+      "env": {
+        "PROJECT_ROOT": "${WORKSPACE_ROOT}"
+      }
+    }
+  }
+}
+

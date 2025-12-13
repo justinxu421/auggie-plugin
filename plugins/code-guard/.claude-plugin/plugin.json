@@ -1,0 +1,12 @@
+{
+  "name": "code-guard",
+  "description": "Security-focused hooks that warn about potentially dangerous code patterns",
+  "version": "1.0.0",
+  "author": {
+    "name": "Justin Xu",
+    "email": "jxu421@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": ["hooks", "security", "validation"]
+}
+
