@@ -8,8 +8,7 @@
             "type": "command",
             "command": "bash",
             "args": [
-              "-c",
-              "echo pre tool plugin >&2"
+              "${AUGGIE_PLUGIN_ROOT}/hooks/pre_edit_check.sh"
             ],
             "timeout": 5000
           }
@@ -24,8 +23,7 @@
             "type": "command",
             "command": "bash",
             "args": [
-              "-c",
-              "echo post tool plugin >&2"
+              "${AUGGIE_PLUGIN_ROOT}/hooks/post_edit_notify.sh"
             ],
             "timeout": 5000
           }

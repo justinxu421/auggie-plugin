@@ -56,8 +56,28 @@ Hooks are defined in `hooks/hooks.json`:
   "hooks": {
     "PreToolUse": [
       {
-        "hooks": [{"type": "command", "command": "python3 ..."}],
-        "matcher": "Edit|Write|MultiEdit"
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash",
+            "args": ["-c", "${CLAUDE_PLUGIN_ROOT}/hooks/security_check.sh"],
+            "timeout": 5000
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash",
+            "args": ["-c", "${CLAUDE_PLUGIN_ROOT}/hooks/log_changes.sh"],
+            "timeout": 5000
+          }
+        ]
       }
     ]
   }
