@@ -6,10 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash",
-            "args": [
-              "${AUGGIE_PLUGIN_ROOT}/hooks/pre_edit_check.sh"
-            ],
+            "command": "${AUGGIE_PLUGIN_ROOT}/hooks/pre_edit_check.sh",
             "timeout": 5000
           }
         ]
@@ -21,10 +18,19 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash",
-            "args": [
-              "${AUGGIE_PLUGIN_ROOT}/hooks/post_edit_notify.sh"
-            ],
+            "command": "${AUGGIE_PLUGIN_ROOT}/hooks/post_edit_notify.sh",
+            "timeout": 5000
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${AUGGIE_PLUGIN_ROOT}/hooks/stop_hook.sh",
             "timeout": 5000
           }
         ]
