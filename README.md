@@ -7,7 +7,7 @@ An example Claude Code plugin marketplace demonstrating various plugin capabilit
 Add this marketplace to Claude Code:
 
 ```bash
-/plugin marketplace add justinxu421/auggie-plugin
+auggie plugin marketplace add justinxu421/auggie-plugin
 ```
 
 ## Available Plugins
